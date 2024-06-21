@@ -2,6 +2,7 @@ import React, { useState, ChangeEvent, FormEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import SignupValidation from "./SignupValidation";
 import axios from "axios";
+import Logo from "../images/logo.png"
 
 interface FormValues {
   name: string;
@@ -51,7 +52,7 @@ const Signup: React.FC = () => {
         >
           <img
             className="h-20 mr-2"
-            src=""
+            src={Logo}
             alt="logo"
           />
           SignUp Form
@@ -118,7 +119,7 @@ const Signup: React.FC = () => {
                   name="password"
                   id="password"
                   placeholder="••••••••"
-                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 w-full"
                   required
                   onChange={handleInput}
                 />
@@ -162,7 +163,7 @@ const Signup: React.FC = () => {
               <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                 Already have an account?{" "}
                 <Link
-                  to="/"
+                  to="/login"
                   className="font-medium text-primary-600 hover:underline dark:text-primary-500"
                 >
                   Login here

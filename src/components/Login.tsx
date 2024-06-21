@@ -3,6 +3,7 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import LoginValidation from "./LoginValidation";
 import axios from "axios";
 import AuthContext from "../AuthContext";
+import Logo from "../images/logo.png"
 
 function Login() {
   const [values, setValues] = useState({
@@ -58,7 +59,7 @@ function Login() {
         >
           <img
             className="h-20 mr-2"
-            src=""
+            src={Logo}
             alt="logo"
           />
           Login Form
