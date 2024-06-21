@@ -1,5 +1,5 @@
 function App() {
-  //bbhghgg nigga
+  //bbhghgg ked si macka tak si pes
   return (
     <></>
   )
