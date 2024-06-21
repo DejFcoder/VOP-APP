@@ -1,13 +1,9 @@
-<<<<<<< HEAD
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./AuthContext";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
 
 function App(): JSX.Element {
-=======
-function App() {
->>>>>>> 644bede5c14d4aeede8a81657853546426474410
   return (
     <Router>
       <AuthProvider>
